@@ -1,8 +1,3 @@
----
-title: logika dan pembuktian
-
----
-
 
 # logika matematika
 
