@@ -57,11 +57,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'logika';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Logika';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="jupytext: formats: md:myst text_representation: extension: .md format_name: myst format_version: 0.13 jupytext_version: 1.11.5 kernelspec: display_name: Python 3 language: python name: python3" href="HIMPUNAN%20%282%29.html" />
-    <link rel="prev" title="Algoritma" href="Algoritma.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -124,6 +124,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -179,22 +181,10 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">logika matematika</a></li>
-<li class="toctree-l1"><a class="reference internal" href="HIMPUNAN%20%282%29.html">jupytext:
-formats: md:myst
-text_representation:
-extension: .md
-format_name: myst
-format_version: 0.13
-jupytext_version: 1.11.5
-kernelspec:
-display_name: Python 3
-language: python
-name: python3</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="HIMPUNAN%20%282%29.html">HIMPUNAN</a></li>
 </ul>
 
     </div>
@@ -266,7 +256,7 @@ name: python3</a></li>
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Flogika.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FLogika.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -296,7 +286,7 @@ name: python3</a></li>
       
       
       
-      <li><a href="_sources/logika.md" target="_blank"
+      <li><a href="_sources/Logika.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -394,6 +384,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konjungsi">konjungsi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disjugsi">disjugsi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implikasi">implikasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biimplikasi">Biimplikasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referensi">Referensi</a></li>
 </ul>
             </nav>
         </div>
@@ -465,7 +457,7 @@ Konjungsi disimbolkan dengan (^). Kebenaran kalimat dengan konjungsi dijelaskan 
 p: Echidna adalah mamalia yang bertelur. (benar)
 q: Platipus adalah mamalia yang bertelur. (benar)
 p∧q: Echidna dan platipus adalah hewan mamalia yang bertelur.(benar)
-jika salah satu premisnya bernilai salah maka konjjungsinya sudah pasti bernilai salah juga.</p>
+jika salah satu premisnya bernilai salah maka konjungsinya sudah pasti bernilai salah juga.</p>
 </section>
 <section id="disjugsi">
 <h2>disjugsi<a class="headerlink" href="#disjugsi" title="Link to this heading">#</a></h2>
@@ -474,48 +466,113 @@ disjungsi hanya bernilai salah jika kedua pernyataan salah dan tetap bernilai be
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>p</p></th>
-<th class="head"><p>Column 2</p></th>
-<th class="head"><p>Column 3</p></th>
+<th class="head"><p>q</p></th>
+<th class="head"><p>p^q</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>B</p></td>
 <td><p>B</p></td>
-<td><p>Text</p></td>
+<td><p>B</p></td>
 </tr>
 <tr class="row-odd"><td><p>B</p></td>
 <td><p>S</p></td>
-<td><p></p></td>
+<td><p>B</p></td>
 </tr>
 <tr class="row-even"><td><p>S</p></td>
 <td><p>B</p></td>
-<td><p></p></td>
+<td><p>B</p></td>
 </tr>
 <tr class="row-odd"><td><p>S</p></td>
-<td><p></p></td>
-<td><p></p></td>
+<td><p>S</p></td>
+<td><p>S</p></td>
 </tr>
 </tbody>
 </table>
 </div>
+<p>Contoh disjungsi adalah
+p : paus adalah mamalia(pernyataan bernilai benar)
+q : paus adalah herbivora(pernyataan bernilai salah)
+p∧q: Paus adalah mamalia atau herbivora (pernyataan bernilai benar)</p>
 </section>
 <section id="implikasi">
 <h2>implikasi<a class="headerlink" href="#implikasi" title="Link to this heading">#</a></h2>
+<p>Implikasi merupakan logika matematika berupa pernyataan majemuk. Implikasi menunjukkan hubungan sebab dan akibat, menggunakan konjungsi seperti “jika” dan “maka”, juga disimbolkan oleh karakter “→”.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p>Column 1</p></th>
-<th class="head"><p>Column 2</p></th>
-<th class="head"><p>Column 3</p></th>
+<tr class="row-odd"><th class="head"><p>p</p></th>
+<th class="head"><p>q</p></th>
+<th class="head"><p>p→q</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Text</p></td>
-<td><p>Text</p></td>
-<td><p>Text</p></td>
+<tr class="row-even"><td><p>B</p></td>
+<td><p>B</p></td>
+<td><p>B</p></td>
+</tr>
+<tr class="row-odd"><td><p>B</p></td>
+<td><p>S</p></td>
+<td><p>S</p></td>
+</tr>
+<tr class="row-even"><td><p>S</p></td>
+<td><p>B</p></td>
+<td><p>B</p></td>
+</tr>
+<tr class="row-odd"><td><p>S</p></td>
+<td><p>S</p></td>
+<td><p>B</p></td>
 </tr>
 </tbody>
 </table>
 </div>
+<p>Contoh implikasi adalah
+Jika lulus ujian dengan nilai baik, maka ibu akan membelikan sepeda.
+Jika tidak bisa dibagi bilangan lain selain satu dan dirinya sendiri, maka angka 3 adalah bilangan prima.</p>
+</section>
+<section id="biimplikasi">
+<h2>Biimplikasi<a class="headerlink" href="#biimplikasi" title="Link to this heading">#</a></h2>
+<p>Biimplikasi adalah logika matematika yang ditandai dengan penggunaan kata “jika dan hanya jika”. Implikasi ganda terjadi dalam kalimat majemuk dan diwakili oleh “↔”.</p>
+<p>Biimplikasi  benar hanya  jika dua pernyataan (p dan q) keduanya benar atau keduanya salah. Jika salah satu pernyataan salah, implikasi kondisional salah.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>p</p></th>
+<th class="head"><p>q</p></th>
+<th class="head"><p>p↔q</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>B</p></td>
+<td><p>B</p></td>
+<td><p>B</p></td>
+</tr>
+<tr class="row-odd"><td><p>B</p></td>
+<td><p>S</p></td>
+<td><p>S</p></td>
+</tr>
+<tr class="row-even"><td><p>S</p></td>
+<td><p>B</p></td>
+<td><p>S</p></td>
+</tr>
+<tr class="row-odd"><td><p>S</p></td>
+<td><p>S</p></td>
+<td><p>B</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Contoh biimpliasi adalah
+Hukum gas ideal berlaku jika dan hanya jika berada dalam keadaan standar.</p>
+</section>
+<section id="referensi">
+<h2>Referensi<a class="headerlink" href="#referensi" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://amp.kompas.com/skola/read/2022/06/02/145036669/negasi-konjungsi-disjungsi-implikasi-dan-biimplikasi">https://amp.kompas.com/skola/read/2022/06/02/145036669/negasi-konjungsi-disjungsi-implikasi-dan-biimplikasi</a></p>
+<p>Latihan soal :
+Buatlah tabel kebenaran untuk~pernyataan berikut $<span class="math notranslate nohighlight">\(P\lor(R\to\ Q)\)</span>$</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{array}{c|c|c|c|cc}P&amp;Q&amp;R&amp;\ Q&amp;R\to\ Q&amp;P\lor(R\to\ Q)\\\hline\text{Т}&amp;\text{Т}&amp;\text{Т}&amp;\text{-}&amp;\text{-}&amp;\text{-}\\\text{Т}&amp;\text{Т}&amp;\text{F}&amp;\text{-}&amp;\text{-}&amp;\text{-}\\\text{T}&amp;\text{F}&amp;\text{T}&amp;\text{-}&amp;\text{-}&amp;\text{-}\\\text{T}&amp;\text{F}&amp;\text{F}&amp;\text{-}&amp;\text{-}&amp;\text{-}\\\text{F}&amp;\text{T}&amp;\text{T}&amp;\text{-}&amp;\text{-}&amp;\text{-}\\\text{F}&amp;\text{T}&amp;\text{F}&amp;\text{-}&amp;\text{-}&amp;\text{-}\\\text{F}&amp;\text{F}&amp;\text{T}&amp;\text{-}&amp;\text{-}&amp;\text{-}\\\text{F}&amp;\text{F}&amp;\text{F}&amp;\text{-}&amp;\text{-}&amp;\text{-}&amp;\text{-}\end{array}\end{split}\]</div>
+<p>jawaban</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{array}{c|c|c|c|cc}P&amp;Q&amp;R&amp;\ Q&amp;R\to\ Q&amp;P\lor(R\to\ Q)\\\hline\text{Т}&amp;\text{Т}&amp;\text{Т}&amp;\text{T}&amp;\text{T}&amp;\text{T}\\\text{Т}&amp;\text{Т}&amp;\text{F}&amp;\text{T}&amp;\text{T}&amp;\text{T}\\\text{T}&amp;\text{F}&amp;\text{T}&amp;\text{F}&amp;\text{F}&amp;\text{T}\\\text{T}&amp;\text{F}&amp;\text{F}&amp;\text{F}&amp;\text{T}&amp;\text{T}\\\text{F}&amp;\text{T}&amp;\text{T}&amp;\text{T}&amp;\text{T}&amp;\text{T}\\\text{F}&amp;\text{T}&amp;\text{F}&amp;\text{T}&amp;\text{T}&amp;\text{T}\\\text{F}&amp;\text{F}&amp;\text{T}&amp;\text{F}&amp;\text{F}&amp;\text{F}\\\text{F}&amp;\text{F}&amp;\text{F}&amp;\text{F}&amp;\text{T}&amp;\text{T}&amp;\text{}\end{array}\end{split}\]</div>
 </section>
 </section>
 
@@ -549,34 +606,6 @@ disjungsi hanya bernilai salah jika kedua pernyataan salah dan tetap bernilai be
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="Algoritma.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Algoritma</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="HIMPUNAN%20%282%29.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">jupytext:
-formats: md:myst
-text_representation:
-extension: .md
-format_name: myst
-format_version: 0.13
-jupytext_version: 1.11.5
-kernelspec:
-display_name: Python 3
-language: python
-name: python3</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -597,6 +626,8 @@ name: python3</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konjungsi">konjungsi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disjugsi">disjugsi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implikasi">implikasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biimplikasi">Biimplikasi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referensi">Referensi</a></li>
 </ul>
   </nav></div>
 
