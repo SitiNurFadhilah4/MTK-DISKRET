@@ -11,8 +11,7 @@ Algoritma adalah sekumpulan langkah-langkah yang terstruktur dan sistematis untu
 
 Sequential search adalah metode pencarian data yang dilakukan secara berurutan, mulai dari awal hingga akhir, dengan membandingkan setiap elemen array satu per satu.
 
-### Algoritma Binary Search
-Binary search atau pencarian biner adalah algoritma pencarian yang digunakan untuk menemukan item dalam daftar yang sudah diurutkan.
+### Algoritma Binary Searchr adalah algoritma pencarian yang digunakan untuk menemukan item dalam daftar yang sudah diurutkan.
 proses pencarian menggunakan binary search lebih cepat dibandingkan sequential dikarena cara kerja algoritma pencarian biner yang memulai di tengah daftar yang telah diurutkan. 
 
 ## Pseudocode adalah
@@ -42,3 +41,4 @@ https://www.gramedia.com/best-seller/pseudocode/
 https://www-geeksforgeeks-org.translate.goog/analysis-algorithms-big-o-analysis/?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=tc
 
 https://www.geeksforgeeks.org/time-complexity-and-space-complexity/
+Binary search atau pencarian bine
