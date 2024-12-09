@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Deretan &#8212; My sample book</title>
+    <title>Probabilitas Diskrit dan Probabilitas Bayesian &#8212; My sample book</title>
   
   
   
@@ -59,11 +59,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Deretan';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Probabilitas Diskrit dan Proba';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Analisa graph" href="analisis%20graph.html" />
-    <link rel="prev" title="aljabar boolean dan gerbang logika" href="aljabar%20boolean.html" />
+    <link rel="prev" title="Analisa graph" href="analisis%20graph.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -188,10 +187,10 @@
 
 
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Deretan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Deretan.html">Deretan</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="analisis%20graph.html">Analisa graph</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Probabilitas%20Diskrit%20dan%20Proba.html">Probabilitas Diskrit dan Probabilitas Bayesian</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Probabilitas Diskrit dan Probabilitas Bayesian</a></li>
 </ul>
 
     </div>
@@ -263,7 +262,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FDeretan.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FProbabilitas Diskrit dan Proba.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -293,7 +292,7 @@
       
       
       
-      <li><a href="_sources/Deretan.md" target="_blank"
+      <li><a href="_sources/Probabilitas Diskrit dan Proba.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -377,7 +376,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Deretan</h1>
+    <h1>Probabilitas Diskrit dan Probabilitas Bayesian</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -387,23 +386,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Deretan</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-deret">Pengertian deret</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-aritmatika">Deret Aritmatika</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-geometri">Deret Geometri</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-diskrit">Probabilitas Diskrit</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-probabilitas-diskrit">Pengertian Probabilitas Diskrit</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-utama-dalam-probabilitas">Konsep Utama dalam Probabilitas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-bayesian">Probabilitas Bayesian</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-probabilitas-bayesian">Pengertian Probabilitas Bayesian</a></li>
 </ul>
 </li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rekursi">Rekursi</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-rekursi">Pengertian rekursi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rekursi-dalam-pemrograman">Rekursi dalam Pemrograman</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -414,107 +406,53 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="deretan">
-<h1>Deretan<a class="headerlink" href="#deretan" title="Link to this heading">#</a></h1>
-<section id="pengertian-deret">
-<h2>Pengertian deret<a class="headerlink" href="#pengertian-deret" title="Link to this heading">#</a></h2>
-<p>Deret adalah penjumlahan dari suku-suku suatu barisan. Ada dua jenis utama deret yang sering dibahas, yaitu deret aritmatika dan deret geometri.</p>
-<section id="deret-aritmatika">
-<h3>Deret Aritmatika<a class="headerlink" href="#deret-aritmatika" title="Link to this heading">#</a></h3>
-<p>Merupakan penjumlahan suku-suku dari barisan aritmatika, di mana setiap suku bertambah atau berkurang dengan nilai yang sama (beda,𝑑).</p>
-<ul class="simple">
-<li><p>Rumus Suku ke-n Barisan Aritmatika:</p></li>
-</ul>
-<p><span class="math notranslate nohighlight">\(U_n = U_1 + (n-1) \cdot d\)</span></p>
-<p>Di mana:
-𝑈𝑛: Suku ke-n
-𝑈1: Suku pertama
-𝑑: Beda antar suku
-𝑛: Nomor suku</p>
-<ul class="simple">
-<li><p>Rumus Jumlah n Suku Pertama Deret Aritmatika:</p></li>
-</ul>
-<p><span class="math notranslate nohighlight">\(S_n = \frac{n}{2} \cdot (U_1 + U_n)\)</span>
-Atau:
-<span class="math notranslate nohighlight">\(S_n = \frac{n}{2} \cdot [2U_1 + (n-1)d]\)</span></p>
-<p>Contoh: barisan 2,5,8,11…
-Penyelesaian:
-<span class="math notranslate nohighlight">\(U_1 = 2, \quad d = 3\)</span></p>
-<p>Suku ke-4:<span class="math notranslate nohighlight">\(U_4 = 2 + (4 - 1) \cdot 3 = 11\)</span></p>
-<p>Jumlah 4 suku pertama:<span class="math notranslate nohighlight">\(S_4 = \frac{4}{2} \cdot (2 + 11) = 26\)</span></p>
-</section>
-<section id="deret-geometri">
-<h3>Deret Geometri<a class="headerlink" href="#deret-geometri" title="Link to this heading">#</a></h3>
-<p>Merupakan penjumlahan suku-suku dari barisan geometri, di mana setiap suku diperoleh dengan mengalikan suku sebelumnya dengan rasio tetap (rasio,𝑟).</p>
-<ul class="simple">
-<li><p>Rumus Suku ke-n Barisan Geometri:
-<span class="math notranslate nohighlight">\(U_n = U_1 \cdot r^{n-1}\)</span></p></li>
-<li><p>Rumus Jumlah n Suku Pertama Deret Geometri: jika <span class="math notranslate nohighlight">\(r \neq 1\)</span></p></li>
-</ul>
-<p><span class="math notranslate nohighlight">\(S_n = U_1 \cdot \frac{1 - r^n}{1 - r}\)</span></p>
-<p>Jika r=1:
-<span class="math notranslate nohighlight">\(S_n = n \cdot U_1\)</span></p>
-<ul class="simple">
-<li><p>rumus Jumlah Deret Tak Hingga (|r| &lt; 1):
-<span class="math notranslate nohighlight">\(S_\infty = \frac{U_1}{1 - r}\)</span></p></li>
-</ul>
-<p>Contoh: Barisan 3,6,12,24,…
-Penyelesaian:
-<span class="math notranslate nohighlight">\(U_1 = 3, \quad r = 2\)</span></p>
-<p>Suku ke-4:<span class="math notranslate nohighlight">\(U_4 = 3 \cdot 2^{4-1} = 24\)</span></p>
-<p>Jumlah 4 suku pertama:<span class="math notranslate nohighlight">\(S_4 = 3 \cdot \frac{1 - 2^4}{1 - 2} = 45\)</span></p>
+  <section id="probabilitas-diskrit-dan-probabilitas-bayesian">
+<h1>Probabilitas Diskrit dan Probabilitas Bayesian<a class="headerlink" href="#probabilitas-diskrit-dan-probabilitas-bayesian" title="Link to this heading">#</a></h1>
+<section id="probabilitas-diskrit">
+<h2>Probabilitas Diskrit<a class="headerlink" href="#probabilitas-diskrit" title="Link to this heading">#</a></h2>
+<p>Probabilitas diskrit merujuk pada peluang dari hasil yang terpisah dalam ruang sampel diskrit, di mana setiap hasil memiliki peluang tertentu. Probabilitas ini dihitung menggunakan rumus-rumus dasar dalam teori probabilitas.</p>
+<section id="pengertian-probabilitas-diskrit">
+<h3>Pengertian Probabilitas Diskrit<a class="headerlink" href="#pengertian-probabilitas-diskrit" title="Link to this heading">#</a></h3>
+<p>Probabilitas diskrit adalah pengukuran dari kemungkinan suatu kejadian terjadi. Ini digunakan ketika kejadian-kejadian tersebut bisa dihitung atau direpresentasikan sebagai nilai diskret.</p>
 </section>
 </section>
+<section id="konsep-utama-dalam-probabilitas">
+<h2>Konsep Utama dalam Probabilitas<a class="headerlink" href="#konsep-utama-dalam-probabilitas" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Sampel ruang (Sample Space): Semua kemungkinan hasil dari suatu eksperimen. Misalnya, jika Anda melempar satu dadu, sampel ruang Anda adalah {1, 2, 3, 4, 5, 6}.</p></li>
+<li><p>Kejadian (Event): Suatu himpunan dari hasil yang dipilih dari sampel ruang. Misalnya, untuk melempar satu dadu, hasil genap (2, 4, 6) adalah sebuah kejadian.</p></li>
+<li><p>Probabilitas Kejadian: Jika P(A) adalah probabilitas kejadian A, maka P(A)=
+jumlah hasil dalam sampel ruang/
+jumlah hasil kejadian A</p></li>
+</ul>
+<p>Rumus Dasar: Jika 𝑆 adalah ruang sampel diskrit dengan 𝑛 elemen dan P(A) adalah probabilitas dari kejadian A Maka:
+P(A)=
+jumlah elemen dalam S/
+jumlah elemen dalam A</p>
 </section>
-<section id="rekursi">
-<h1>Rekursi<a class="headerlink" href="#rekursi" title="Link to this heading">#</a></h1>
-<section id="pengertian-rekursi">
-<h2>Pengertian rekursi<a class="headerlink" href="#pengertian-rekursi" title="Link to this heading">#</a></h2>
-<p>Rekursi adalah cara mendefinisikan suatu fungsi atau barisan dengan mendasarkan suatu suku pada suku sebelumnya.</p>
+<section id="probabilitas-bayesian">
+<h2>Probabilitas Bayesian<a class="headerlink" href="#probabilitas-bayesian" title="Link to this heading">#</a></h2>
+<p>Probabilitas bayesian melibatkan update probabilitas berdasarkan bukti baru. Prinsip dasarnya adalah menggunakan informasi yang relevan untuk memperbarui keyakinan kita terhadap suatu kejadian.</p>
+<section id="pengertian-probabilitas-bayesian">
+<h3>Pengertian Probabilitas Bayesian<a class="headerlink" href="#pengertian-probabilitas-bayesian" title="Link to this heading">#</a></h3>
+<p>Probabilitas bayesian adalah metode penghitungan probabilitas di mana kita memperbarui probabilitas awal 𝑃(𝐴)berdasarkan bukti 𝐵</p>
+<p>Rumus Bayes:</p>
+<p><span class="math notranslate nohighlight">\(P(H|E) = \frac{P(E|H) \cdot P(H)}{P(E)}\)</span></p>
+<p>Dimana:
+P(H∣E): Probabilitas hipotesis 𝐻 benar setelah memperhitungkan bukti 𝐸 (posterior probability).
+P(H): Probabilitas awal hipotesis 𝐻(prior probability).
+P(E∣H): Probabilitas munculnya bukti 𝐸 jika hipotesis 𝐻 benar (likelihood).
+P(E): Probabilitas munculnya bukti 𝐸 tanpa memperhatikan hipotesis (evidence).</p>
+<p>contoh:</p>
 <ul class="simple">
-<li><p>Sifat Rekursi
-Rekursi biasanya terdiri dari:
-Basis: Nilai awal yang didefinisikan secara eksplisit.
-Rumus Rekurens: Relasi antara suku-suku barisan.</p></li>
+<li><p>1% populasi menderita penyakit tertentu (𝑃(𝐻)=0.01)</p></li>
+<li><p>Tes medis memberikan hasil positif pada 99% orang yang sakit (𝑃(𝐸∣𝐻)=0.99)</p></li>
+<li><p>Tes juga memberikan hasil positif pada 5% orang sehat (𝑃(𝐸∣¬𝐻)=0.05)</p></li>
 </ul>
-<p>Contoh Rekursi Barisan Aritmatika:
-<span class="math notranslate nohighlight">\(U_n = U_{n-1} + d \quad \text{dengan basis: } U_1\)</span>
-Penyelesaian:
-<span class="math notranslate nohighlight">\(U_1 = 2, \quad r = 3\)</span></p>
-<p>Suku ke-2:
-<span class="math notranslate nohighlight">\(U_2 = U_1 \cdot 3 = 6\)</span></p>
-<p>Suku ke-3:
-<span class="math notranslate nohighlight">\(U_3 = U_2 \cdot 3 = 18\)</span></p>
-<p>Contoh Rekursi Barisan Geometri:<span class="math notranslate nohighlight">\(U_n = U_{n-1} \cdot r \quad \text{dengan basis: } U_1\)</span>
-Penyelesaian:
-<span class="math notranslate nohighlight">\(U_1 = 2, \quad r = 3\)</span></p>
-<p>Suku ke-2:
-<span class="math notranslate nohighlight">\(U_2 = U_1 \cdot 3 = 6\)</span></p>
-<p>Suku ke-3:
-<span class="math notranslate nohighlight">\(U_3 = U_2 \cdot 3 = 18\)</span></p>
-<section id="rekursi-dalam-pemrograman">
-<h3>Rekursi dalam Pemrograman<a class="headerlink" href="#rekursi-dalam-pemrograman" title="Link to this heading">#</a></h3>
-<p>Rekursi juga digunakan dalam algoritma untuk menyelesaikan masalah dengan memanggil dirinya sendiri.</p>
-<ul class="simple">
-<li><p>Contoh Rekursi Faktorial:
-<span class="math notranslate nohighlight">\(n! = n \cdot (n-1)!\)</span></p></li>
-</ul>
-<p>Dengan basis: 0!=1</p>
-<ul class="simple">
-<li><p>Contoh Rekursi Deret Fibonacci:
-<span class="math notranslate nohighlight">\(F_n = F_{n-1} + F_{n-2} \quad \text{dengan basis: } F_1 = 1, \, F_2 = 1\)</span></p></li>
-<li><p>Hubungan Deret dan Rekursi
-Deret sering kali dapat dirumuskan menggunakan rekursi. Sebagai contoh:</p></li>
-</ul>
-<p>Barisan aritmatika:
-$<span class="math notranslate nohighlight">\(
-U_n = U_{n-1} + d
-\)</span>$</p>
-<p>Barisan geometri:
-$<span class="math notranslate nohighlight">\(
-U_n = U_{n-1} \cdot r
-\)</span>$</p>
-<p>Rekursi memberikan cara untuk mendefinisikan atau menghitung suku-suku deret tanpa menggunakan rumus eksplisit.</p>
+<p>Jika hasil tes seseorang positif, berapa probabilitas dia benar-benar sakit (𝑃(𝐻∣𝐸)) ?Menggunakan Teorema Bayes:</p>
+<p><span class="math notranslate nohighlight">\(P(H|E) = \frac{P(E|H) \cdot P(H)}{P(E|H) \cdot P(H) + P(E|\neg H) \cdot P(\neg H)}\)</span></p>
+<p><span class="math notranslate nohighlight">\(P(H|E) = \frac{0.99 \cdot 0.01}{0.99 \cdot 0.01 + 0.05 \cdot 0.99} \approx 0.17\)</span></p>
+<p>Jadi, meskipun tes positif, probabilitas orang tersebut sakit hanya sekitar 17%.</p>
 </section>
 </section>
 </section>
@@ -550,22 +488,13 @@ U_n = U_{n-1} \cdot r
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="aljabar%20boolean.html"
+       href="analisis%20graph.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">aljabar boolean dan gerbang logika</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="analisis%20graph.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Analisa graph</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -583,23 +512,16 @@ U_n = U_{n-1} \cdot r
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Deretan</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-deret">Pengertian deret</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-aritmatika">Deret Aritmatika</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-geometri">Deret Geometri</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-diskrit">Probabilitas Diskrit</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-probabilitas-diskrit">Pengertian Probabilitas Diskrit</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-utama-dalam-probabilitas">Konsep Utama dalam Probabilitas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-bayesian">Probabilitas Bayesian</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-probabilitas-bayesian">Pengertian Probabilitas Bayesian</a></li>
 </ul>
 </li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rekursi">Rekursi</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-rekursi">Pengertian rekursi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rekursi-dalam-pemrograman">Rekursi dalam Pemrograman</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>

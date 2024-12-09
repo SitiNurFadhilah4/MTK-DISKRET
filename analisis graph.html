@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Deretan &#8212; My sample book</title>
+    <title>Analisa graph &#8212; My sample book</title>
   
   
   
@@ -57,13 +57,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Deretan';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'analisis graph';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Analisa graph" href="analisis%20graph.html" />
-    <link rel="prev" title="aljabar boolean dan gerbang logika" href="aljabar%20boolean.html" />
+    <link rel="next" title="Probabilitas Diskrit dan Probabilitas Bayesian" href="Probabilitas%20Diskrit%20dan%20Proba.html" />
+    <link rel="prev" title="Deretan" href="Deretan.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -188,9 +186,9 @@
 
 
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Deretan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Deretan.html">Deretan</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="analisis%20graph.html">Analisa graph</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Analisa graph</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Probabilitas%20Diskrit%20dan%20Proba.html">Probabilitas Diskrit dan Probabilitas Bayesian</a></li>
 </ul>
 
@@ -263,7 +261,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FDeretan.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fanalisis graph.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -293,7 +291,7 @@
       
       
       
-      <li><a href="_sources/Deretan.md" target="_blank"
+      <li><a href="_sources/analisis graph.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -377,7 +375,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Deretan</h1>
+    <h1>Analisa graph</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -387,23 +385,21 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Deretan</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-deret">Pengertian deret</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-aritmatika">Deret Aritmatika</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-geometri">Deret Geometri</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-analisis-graph">Pengertian analisis graph</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#social-network-analysis">social network analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-social-network-analysis">pengertian social network analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#social-network">Social network</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rekursi">Rekursi</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-rekursi">Pengertian rekursi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rekursi-dalam-pemrograman">Rekursi dalam Pemrograman</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">Degree Centrality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality">Closeness Centrality</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-closeness-centrality">pengertian Closeness Centrality</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#betweenness-centrality">Betweenness Centrality</a></li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -414,108 +410,75 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="deretan">
-<h1>Deretan<a class="headerlink" href="#deretan" title="Link to this heading">#</a></h1>
-<section id="pengertian-deret">
-<h2>Pengertian deret<a class="headerlink" href="#pengertian-deret" title="Link to this heading">#</a></h2>
-<p>Deret adalah penjumlahan dari suku-suku suatu barisan. Ada dua jenis utama deret yang sering dibahas, yaitu deret aritmatika dan deret geometri.</p>
-<section id="deret-aritmatika">
-<h3>Deret Aritmatika<a class="headerlink" href="#deret-aritmatika" title="Link to this heading">#</a></h3>
-<p>Merupakan penjumlahan suku-suku dari barisan aritmatika, di mana setiap suku bertambah atau berkurang dengan nilai yang sama (beda,𝑑).</p>
-<ul class="simple">
-<li><p>Rumus Suku ke-n Barisan Aritmatika:</p></li>
-</ul>
-<p><span class="math notranslate nohighlight">\(U_n = U_1 + (n-1) \cdot d\)</span></p>
-<p>Di mana:
-𝑈𝑛: Suku ke-n
-𝑈1: Suku pertama
-𝑑: Beda antar suku
-𝑛: Nomor suku</p>
-<ul class="simple">
-<li><p>Rumus Jumlah n Suku Pertama Deret Aritmatika:</p></li>
-</ul>
-<p><span class="math notranslate nohighlight">\(S_n = \frac{n}{2} \cdot (U_1 + U_n)\)</span>
-Atau:
-<span class="math notranslate nohighlight">\(S_n = \frac{n}{2} \cdot [2U_1 + (n-1)d]\)</span></p>
-<p>Contoh: barisan 2,5,8,11…
-Penyelesaian:
-<span class="math notranslate nohighlight">\(U_1 = 2, \quad d = 3\)</span></p>
-<p>Suku ke-4:<span class="math notranslate nohighlight">\(U_4 = 2 + (4 - 1) \cdot 3 = 11\)</span></p>
-<p>Jumlah 4 suku pertama:<span class="math notranslate nohighlight">\(S_4 = \frac{4}{2} \cdot (2 + 11) = 26\)</span></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="analisa-graph">
+<h1>Analisa graph<a class="headerlink" href="#analisa-graph" title="Link to this heading">#</a></h1>
+<section id="pengertian-analisis-graph">
+<h2>Pengertian analisis graph<a class="headerlink" href="#pengertian-analisis-graph" title="Link to this heading">#</a></h2>
+<p>Analisis Graph adalah proses mempelajari dan memahami struktur serta hubungan di dalam sebuah graph yaitu kumpulan elemen yang terdiri dari nodes (simpul) dan edges (sisi), yang digunakan untuk merepresentasikan jaringan atau hubungan antara entitas.</p>
 </section>
-<section id="deret-geometri">
-<h3>Deret Geometri<a class="headerlink" href="#deret-geometri" title="Link to this heading">#</a></h3>
-<p>Merupakan penjumlahan suku-suku dari barisan geometri, di mana setiap suku diperoleh dengan mengalikan suku sebelumnya dengan rasio tetap (rasio,𝑟).</p>
+<section id="social-network-analysis">
+<h2>social network analysis<a class="headerlink" href="#social-network-analysis" title="Link to this heading">#</a></h2>
+<section id="pengertian-social-network-analysis">
+<h3>pengertian social network analysis<a class="headerlink" href="#pengertian-social-network-analysis" title="Link to this heading">#</a></h3>
+<p>Social Network Analysis (SNA) adalah metode untuk menganalisis hubungan, pola interaksi, dan struktur jaringan dalam suatu kelompok atau komunitas. SNA digunakan untuk memahami bagaimana individu, organisasi, atau entitas lainnya saling terhubung melalui jaringan sosial.</p>
+<p><img alt="image" src="_images/g2.png" />
+<img alt="image" src="_images/g1.png" /></p>
+<section id="social-network">
+<h4>Social network<a class="headerlink" href="#social-network" title="Link to this heading">#</a></h4>
+<p>terdapat node yang mewakili orang atau individu atau aktor. Relasi  antar objek  dapat dinyatakan dengan link atau edges yang terjadi antara aktor tersebut Social network terdiri dari banyak aktor yang mempunyai relasi satu sama lain hingga membentuk peta jaringan sosial yang dinyatakan dengan graph</p>
 <ul class="simple">
-<li><p>Rumus Suku ke-n Barisan Geometri:
-<span class="math notranslate nohighlight">\(U_n = U_1 \cdot r^{n-1}\)</span></p></li>
-<li><p>Rumus Jumlah n Suku Pertama Deret Geometri: jika <span class="math notranslate nohighlight">\(r \neq 1\)</span></p></li>
+<li><p>Tidak semua node dalam jaringan adalah penting (aktor).</p></li>
+<li><p>Mencari node yang paling penting dalam suatu jaringan.</p></li>
+<li><p>Centrality adalah penentuan aktor menggunakan ukuran pada Social Network Centrality dalam teori graf dan social network. Dibagi menjadi empat jenis,</p></li>
 </ul>
-<p><span class="math notranslate nohighlight">\(S_n = U_1 \cdot \frac{1 - r^n}{1 - r}\)</span></p>
-<p>Jika r=1:
-<span class="math notranslate nohighlight">\(S_n = n \cdot U_1\)</span></p>
-<ul class="simple">
-<li><p>rumus Jumlah Deret Tak Hingga (|r| &lt; 1):
-<span class="math notranslate nohighlight">\(S_\infty = \frac{U_1}{1 - r}\)</span></p></li>
-</ul>
-<p>Contoh: Barisan 3,6,12,24,…
-Penyelesaian:
-<span class="math notranslate nohighlight">\(U_1 = 3, \quad r = 2\)</span></p>
-<p>Suku ke-4:<span class="math notranslate nohighlight">\(U_4 = 3 \cdot 2^{4-1} = 24\)</span></p>
-<p>Jumlah 4 suku pertama:<span class="math notranslate nohighlight">\(S_4 = 3 \cdot \frac{1 - 2^4}{1 - 2} = 45\)</span></p>
+<ol class="arabic simple">
+<li><p>degree centrality,</p></li>
+<li><p>betweeness centrality,</p></li>
+<li><p>closeness centrality,</p></li>
+<li><p>eigenvector centrality</p></li>
+</ol>
 </section>
 </section>
 </section>
-<section id="rekursi">
-<h1>Rekursi<a class="headerlink" href="#rekursi" title="Link to this heading">#</a></h1>
-<section id="pengertian-rekursi">
-<h2>Pengertian rekursi<a class="headerlink" href="#pengertian-rekursi" title="Link to this heading">#</a></h2>
-<p>Rekursi adalah cara mendefinisikan suatu fungsi atau barisan dengan mendasarkan suatu suku pada suku sebelumnya.</p>
+<section id="degree-centrality">
+<h2>Degree Centrality<a class="headerlink" href="#degree-centrality" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Sifat Rekursi
-Rekursi biasanya terdiri dari:
-Basis: Nilai awal yang didefinisikan secara eksplisit.
-Rumus Rekurens: Relasi antara suku-suku barisan.</p></li>
+<li><p>Degree centrality adalah jumlah edge yang terkoneksi pada suatu node yang mewakili interaksi.</p></li>
+<li><p>Pentingnya node ditentukan oleh jumlah node yang berdekatan dengan node tersebut
+Lebih besar derajatnya (degree), maka lebih penting node itu dalam suatu jaringan
+Hanya sebagian kecil node yang memiliki derajat tinggi dalam jaringan</p></li>
+<li><p>Mengukur jumlah koneksi langsung yang dimiliki oleh sebuah node.</p></li>
+<li><p>Node dengan derajat tinggi biasanya dianggap penting.</p></li>
 </ul>
-<p>Contoh Rekursi Barisan Aritmatika:
-<span class="math notranslate nohighlight">\(U_n = U_{n-1} + d \quad \text{dengan basis: } U_1\)</span>
-Penyelesaian:
-<span class="math notranslate nohighlight">\(U_1 = 2, \quad r = 3\)</span></p>
-<p>Suku ke-2:
-<span class="math notranslate nohighlight">\(U_2 = U_1 \cdot 3 = 6\)</span></p>
-<p>Suku ke-3:
-<span class="math notranslate nohighlight">\(U_3 = U_2 \cdot 3 = 18\)</span></p>
-<p>Contoh Rekursi Barisan Geometri:<span class="math notranslate nohighlight">\(U_n = U_{n-1} \cdot r \quad \text{dengan basis: } U_1\)</span>
-Penyelesaian:
-<span class="math notranslate nohighlight">\(U_1 = 2, \quad r = 3\)</span></p>
-<p>Suku ke-2:
-<span class="math notranslate nohighlight">\(U_2 = U_1 \cdot 3 = 6\)</span></p>
-<p>Suku ke-3:
-<span class="math notranslate nohighlight">\(U_3 = U_2 \cdot 3 = 18\)</span></p>
-<section id="rekursi-dalam-pemrograman">
-<h3>Rekursi dalam Pemrograman<a class="headerlink" href="#rekursi-dalam-pemrograman" title="Link to this heading">#</a></h3>
-<p>Rekursi juga digunakan dalam algoritma untuk menyelesaikan masalah dengan memanggil dirinya sendiri.</p>
-<ul class="simple">
-<li><p>Contoh Rekursi Faktorial:
-<span class="math notranslate nohighlight">\(n! = n \cdot (n-1)!\)</span></p></li>
-</ul>
-<p>Dengan basis: 0!=1</p>
-<ul class="simple">
-<li><p>Contoh Rekursi Deret Fibonacci:
-<span class="math notranslate nohighlight">\(F_n = F_{n-1} + F_{n-2} \quad \text{dengan basis: } F_1 = 1, \, F_2 = 1\)</span></p></li>
-<li><p>Hubungan Deret dan Rekursi
-Deret sering kali dapat dirumuskan menggunakan rekursi. Sebagai contoh:</p></li>
-</ul>
-<p>Barisan aritmatika:
-$<span class="math notranslate nohighlight">\(
-U_n = U_{n-1} + d
-\)</span>$</p>
-<p>Barisan geometri:
-$<span class="math notranslate nohighlight">\(
-U_n = U_{n-1} \cdot r
-\)</span>$</p>
-<p>Rekursi memberikan cara untuk mendefinisikan atau menghitung suku-suku deret tanpa menggunakan rumus eksplisit.</p>
+<p><img alt="image" src="https://hackmd.io/_uploads/S1g2KgkXke.png" /></p>
+<p>Untuk  node 1, degree centrality adalah 3;
+Normalisasi degree centrality adalah<br />
+3/(9-1)=3/8.</p>
 </section>
+<section id="closeness-centrality">
+<h2>Closeness Centrality<a class="headerlink" href="#closeness-centrality" title="Link to this heading">#</a></h2>
+<section id="pengertian-closeness-centrality">
+<h3>pengertian Closeness Centrality<a class="headerlink" href="#pengertian-closeness-centrality" title="Link to this heading">#</a></h3>
+<p>Closenes centrality adalah nilai kedekatan antara satu node dengan node lain dalam jaringan dengan menghitung rata-rata dari jarak relasi node-node tersebut. Skor closeness centrality mewakili kecepatan dalam penyebaran informasi. Mengukur kedekatan sebuah node dengan node lainnya,
+Node dengan closeness tinggi dapat dengan cepat menyebarkan informasi.</p>
+<p>Contoh Closeness Centrality
+<img alt="image" src="https://hackmd.io/_uploads/S17e7WJmJe.png" />
+<img alt="image" src="https://hackmd.io/_uploads/BJhjQ-kQ1x.png" />
+<img alt="image" src="https://hackmd.io/_uploads/HJR27ZyXyl.png" /></p>
+<p>Node 4  lebih central  dari node 3</p>
+</section>
+</section>
+<section id="betweenness-centrality">
+<h2>Betweenness Centrality<a class="headerlink" href="#betweenness-centrality" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Skor betweeness Centrality mewakili seberapa besar informasi yang tersebar dari suatu aktor. Semakin besar skor, artinya aktor tersebut semakin berperan dalam penyebaran informasi</p></li>
+<li><p>Semakin banyak lintasan yang harus melewati persimpangan itu (misal tidak ada jalan alternatif), maka semakin penting arti persimpangan tersebut. Hal ini menandakan seberapa besar suatu node diperlukan sebagai penghubung dalam penyebaran informasi di dalam jaringan</p></li>
+<li><p>Ukuran ini juga dapat digunakan untuk mengidentifikasi boundary spanners, yaitu orang atau node yang berperan sebagai penghubung (jembatan) antara dua komunitas</p></li>
+<li><p>Menghitung jumlah lintasan terpendek yang melewati suatu node</p></li>
+<li><p>Node dengan  betweenness  tinggi  adalah  penting dalam komunikasi dan penyebaran informasi</p></li>
+<li><p>Mengukur seberapa sering sebuah node menjadi penghubung di antara node lain.
+Penting untuk memahami pengaruh dalam jaringan.</p></li>
+</ul>
 </section>
 </section>
 
@@ -550,20 +513,20 @@ U_n = U_{n-1} \cdot r
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="aljabar%20boolean.html"
+       href="Deretan.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">aljabar boolean dan gerbang logika</p>
+        <p class="prev-next-title">Deretan</p>
       </div>
     </a>
     <a class="right-next"
-       href="analisis%20graph.html"
+       href="Probabilitas%20Diskrit%20dan%20Proba.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Analisa graph</p>
+        <p class="prev-next-title">Probabilitas Diskrit dan Probabilitas Bayesian</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -583,23 +546,21 @@ U_n = U_{n-1} \cdot r
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Deretan</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-deret">Pengertian deret</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-aritmatika">Deret Aritmatika</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-geometri">Deret Geometri</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-analisis-graph">Pengertian analisis graph</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#social-network-analysis">social network analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-social-network-analysis">pengertian social network analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#social-network">Social network</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rekursi">Rekursi</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-rekursi">Pengertian rekursi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rekursi-dalam-pemrograman">Rekursi dalam Pemrograman</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">Degree Centrality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality">Closeness Centrality</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-closeness-centrality">pengertian Closeness Centrality</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#betweenness-centrality">Betweenness Centrality</a></li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
